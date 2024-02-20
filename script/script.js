@@ -3,7 +3,7 @@ function handleNavbarScroll() {
     const header = document.querySelector(".navbar");
     window.onscroll = function () {
         const top = window.scrollY;
-        if (top >= 1300) {
+        if (top >= 0) {
             header.classList.add("navbarDark");
         } else {
             header.classList.remove("navbarDark");
@@ -112,10 +112,50 @@ function AboutDate() {
 }
 document.getElementById('age').innerHTML = AboutDate();
 
+//Text
 
-// CV
+function AfficheTitle() {
+    let texteTitle = document.getElementsByClassName("hero_title");
+    let contenuTitle = texteTitle[0].innerHTML;
+        texteTitle[0].innerHTML = '';
+
+    let index = 0;
+    let timer = setInterval(function() {
+        if(index < contenuTitle.length){
+            texteTitle[0].innerHTML += contenuTitle.charAt(index);
+            index++;
+
+        } else {
+            clearInterval(timer);
+        }
+    }, 50)
+};
+
+function AfficheText() {
+    let texteText = document.getElementsByClassName("hero_desc");
+    let contenuText = texteText[0].innerHTML;
+        texteText[0].innerHTML = '';
+    
+    let index = 0;
+
+    let timer = setInterval(function() {
+        setTimeout(function(){
+
+        if(index < contenuText.length){
+            texteText[0].innerHTML += contenuText.charAt(index);
+            index++;
+
+        } else {
+            clearInterval(timer);
+        }
+    }, 1700)
+    }, 50)
+};
+
 
 // Call the functions to execute the code
+AfficheTitle()
+AfficheText()
 handleNavbarScroll();
 handleNavbarCollapse();
 createSkillsFromJSON();
