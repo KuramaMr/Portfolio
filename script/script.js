@@ -112,7 +112,7 @@ function AboutDate() {
 }
 document.getElementById('age').innerHTML = AboutDate();
 
-//Text
+//Affichage du texte automatiquement
 
 function AfficheTitle() {
     let texteTitle = document.getElementsByClassName("hero_title");

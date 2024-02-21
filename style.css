@@ -70,7 +70,6 @@ span {
 }
 
 .navbar-collapse.collapse.show li{
-    border: 1px solid var(--main-color);
     border-radius: 10px;
     text-align: center;
     margin-top: 2px;
@@ -139,6 +138,11 @@ span {
 }
 
 #jvs {
+    text-decoration: none;
+    color: #13bbff;
+}
+
+#ubisoft {
     text-decoration: none;
     color: #13bbff;
 }
