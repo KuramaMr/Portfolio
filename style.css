@@ -138,7 +138,9 @@ span {
 }
 
 @keyframes fade-in {
-    to { scale: 1; opacity: 1;}
+    to {    scale: 1; opacity: 1;
+        -webkit-scale: 1; opacity: 1;
+    }
 }
 
 #jvs {
