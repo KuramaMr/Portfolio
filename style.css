@@ -128,8 +128,8 @@ span {
 
 .col-lg-8 .col-md-6 {
     -webkit-animation: fade-in cubic-bezier(0.28, -0.31, 0.35, 0.46) forwards;
-    animation-timeline: view();
     animation-range: 0px 500px;
+    -webkit-animation-timeline: view();
     -webkit-animation-range: 0px 500px;
 }
 
