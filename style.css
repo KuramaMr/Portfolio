@@ -137,11 +137,6 @@ span {
     -webkit-animation-range: 0px 500px;
 }
 
-@keyframes fade-in {
-    from { scale: 0; opacity: 0;}
-    to {scale: 1; opacity: 1;}
-}
-
 @-webkit-keyframes fade-in {
     from { scale: 0; opacity: 0;}
     to {scale: 1; opacity: 1;}
