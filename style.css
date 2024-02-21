@@ -106,35 +106,32 @@ span {
 }
 
 .text-center {
-    scale: .0; opacity: 0;
     animation: fade-in cubic-bezier(0.28, -0.31, 0.35, 0.46) forwards;
     animation-timeline: view();
     animation-range: 0px 500px;
 }
 
 .col-lg-4 {
-    scale: .0; opacity: 0;
     animation: fade-in cubic-bezier(0.28, -0.31, 0.35, 0.46) forwards;
     animation-timeline: view();
     animation-range: 0px 500px;
 }
 
 .col-lg-8 p {
-    scale: .0; opacity: 0;
     animation: fade-in cubic-bezier(0.28, -0.31, 0.35, 0.46) forwards;
     animation-timeline: view();
     animation-range: 0px 500px;
 }
 
 .col-lg-8 .col-md-6 {
-    scale: .0; opacity: 0;
     animation: fade-in cubic-bezier(0.28, -0.31, 0.35, 0.46) forwards;
     animation-timeline: view();
     animation-range: 0px 500px;
 }
 
 @keyframes fade-in {
-    to {    scale: 1; opacity: 1;}
+    from { scale: 0; opacity: 0;}
+    to {scale: 1; opacity: 1;}
 }
 
 #jvs {
@@ -204,8 +201,6 @@ span {
     text-align: center;
     width: 100%;
 }
-
-
 
 .card {
     background-color: var(--bs-body-bg)!important;
