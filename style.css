@@ -106,35 +106,39 @@ span {
 }
 
 .text-center {
-    -webkit-scale: .0; opacity: 0;
-    -webkit-animation: fade-in cubic-bezier(0.28, -0.31, 0.35, 0.46) forwards;
+    scale: .0; opacity: 0;
+    animation: fade-in cubic-bezier(0.28, -0.31, 0.35, 0.46) forwards;
+    animation-timeline: view();
+    animation-range: 0px 500px;
+    scale: .0; opacity: 0;
+    animation: fade-in cubic-bezier(0.28, -0.31, 0.35, 0.46) forwards;
     -webkit-animation-timeline: view();
     -webkit-animation-range: 0px 500px;
 }
 
 .col-lg-4 {
-    -webkit-scale: .0; opacity: 0;
-    -webkit-animation: fade-in cubic-bezier(0.28, -0.31, 0.35, 0.46) forwards;
-    -webkit-animation-timeline: view();
-    -webkit-animation-range: 0px 500px;
+    scale: .0; opacity: 0;
+    animation: fade-in cubic-bezier(0.28, -0.31, 0.35, 0.46) forwards;
+    animation-timeline: view();
+    animation-range: 0px 500px;
 }
 
 .col-lg-8 p {
     scale: .0; opacity: 0;
-    -webkit-animation: fade-in cubic-bezier(0.28, -0.31, 0.35, 0.46) forwards;
-    -webkit-animation-timeline: view();
-    -webkit-animation-range: 0px 500px;
+    animation: fade-in cubic-bezier(0.28, -0.31, 0.35, 0.46) forwards;
+    animation-timeline: view();
+    animation-range: 0px 500px;
 }
 
 .col-lg-8 .col-md-6 {
     scale: .0; opacity: 0;
-    -webkit-animation: fade-in cubic-bezier(0.28, -0.31, 0.35, 0.46) forwards;
-    -webkit-animation-timeline: view();
-    -webkit-animation-range: 0px 500px;
+    animation: fade-in cubic-bezier(0.28, -0.31, 0.35, 0.46) forwards;
+    animation-timeline: view();
+    animation-range: 0px 500px;
 }
 
 @keyframes fade-in {
-    to { -webkit-scale: 1; opacity: 1;}
+    to { scale: 1; opacity: 1;}
 }
 
 #jvs {
