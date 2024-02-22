@@ -108,25 +108,25 @@ span {
 .text-center {
     animation: fade-in cubic-bezier(0.28, -0.31, 0.35, 0.46) forwards;
     animation-timeline: view();
-    animation-range: 0px 500px;
+    animation-range: 0px 450px;
 }
 
 .col-lg-4 {
     animation: fade-in cubic-bezier(0.28, -0.31, 0.35, 0.46) forwards;
     animation-timeline: view();
-    animation-range: 0px 500px;
+    animation-range: 0px 450px;
 }
 
 .col-lg-8 p {
     animation: fade-in cubic-bezier(0.28, -0.31, 0.35, 0.46) forwards;
     animation-timeline: view();
-    animation-range: 0px 500px;
+    animation-range: 0px 450px;
 }
 
 .col-lg-8 .col-md-6 {
     animation: fade-in cubic-bezier(0.28, -0.31, 0.35, 0.46) forwards;
     animation-timeline: view();
-    animation-range: 0px 500px;
+    animation-range: 0px 450px;
 }
 
 @keyframes fade-in {
@@ -209,6 +209,17 @@ span {
 
 .card-body h4 {
     color: white;
+}
+
+.card-body {
+    flex: 1 1 auto;
+    padding: 1rem 1rem;
+    display: flex;
+    flex-direction: column;
+    flex-wrap: nowrap;
+    align-content: center;
+    justify-content: space-between;
+    align-items: center;
 }
 
 .card-title {
