@@ -217,9 +217,8 @@ span {
     display: flex;
     flex-direction: column;
     flex-wrap: nowrap;
-    align-content: center;
-    justify-content: space-between;
     align-items: center;
+    justify-content: space-between;
 }
 
 .card-title {
