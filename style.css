@@ -258,3 +258,9 @@ span {
         height: auto;
     }
 }
+
+/**** Footer ****/
+
+footer {
+    margin: 20px;
+}
