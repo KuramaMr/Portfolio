@@ -28,8 +28,6 @@ function createSkillsFromJSON() {
     const container = document.querySelector("#skills .container");
     let row = document.createElement("div");
     row.classList.add("row");
-    row.setAttribute('data-aos', 'fade-left');
-    row.setAttribute('data-aos-offset', '400');
 
     // Load the JSON file
     fetch("data/skills.json")
@@ -48,6 +46,8 @@ function createSkillsFromJSON() {
                         </div>
                     </div>
                 `;
+                card.setAttribute('data-aos', 'fade-left');
+                card.setAttribute('data-aos-offset', '400');
 
                 // Append the card to the current row
                 row.appendChild(card);
@@ -57,8 +57,6 @@ function createSkillsFromJSON() {
                     container.appendChild(row);
                     row = document.createElement("div");
                     row.classList.add("row");
-                    row.setAttribute('data-aos', 'fade-right');
-                    row.setAttribute('data-aos-offset', '400');
                 }
             });
         });
@@ -91,6 +89,8 @@ function createPortfolioFromJSON() {
                     </div>
                 </div>
                 `;
+                card.setAttribute('data-aos', 'fade-left');
+                card.setAttribute('data-aos-offset', '400');
 
                 // Append the card to the current row
                 row.appendChild(card);
@@ -100,8 +100,6 @@ function createPortfolioFromJSON() {
                     container.appendChild(row);
                     row = document.createElement("div");
                     row.classList.add("row");
-                    row.setAttribute('data-aos', 'fade-right');
-                    row.setAttribute('data-aos-offset', '400');
                 }
             });
         });
