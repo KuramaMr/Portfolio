@@ -28,6 +28,8 @@ function createSkillsFromJSON() {
     const container = document.querySelector("#skills .container");
     let row = document.createElement("div");
     row.classList.add("row");
+    row.setAttribute('data-aos', 'fade-left');
+    row.setAttribute('data-aos-offset', '400');
 
     // Load the JSON file
     fetch("data/skills.json")
