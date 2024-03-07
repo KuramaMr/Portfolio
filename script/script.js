@@ -160,10 +160,10 @@ function AfficheText() {
 
 
 // Call the functions to execute the code
+createSkillsFromJSON();
 AfficheTitle()
 AfficheText()
 handleNavbarScroll();
 handleNavbarCollapse();
-createSkillsFromJSON();
 createPortfolioFromJSON();
 AboutDate()
